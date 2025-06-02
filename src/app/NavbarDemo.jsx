@@ -40,7 +40,7 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
        <NavbarSimple />
       <DummyContent />
       {/* <Navbar>
@@ -101,7 +101,7 @@ const DummyContent = () => {
   const words = ["Code wonderful tools", "", "", ""];
   const words2 = ["..", "...", "and people will have wonderful things", ""];
   return (
-    <div className="bg-black sm:p-6">
+    <div className="overflow-x-hidden bg-black sm:p-6">
       <div className="mr-15 mt-12 sm:ml-12 text-4xl md:ml-14 lg:pl-10">
         <h1 className="ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
         <FlipWords2 words={words} /> <br />
