@@ -1,11 +1,19 @@
 "use client";
 import React from "react";
 import { LayoutGrid } from "./ui/LayoutGrid";
+import Image from "next/image";
 
 export function LayoutGridDemo() {
   return (
-    <div className="h-screen py-20 w-full">
-      <LayoutGrid cards={cards} />
+    <div className="flex">
+        <div className="mt-10 ml-20 lg:mt-10 lg:ml-60">
+          <a  href="https://github.com/Gusttav28/Nextjs-Task" className="text-neutral-400 hover:text-blue-400 z-50 relative">
+            github.com
+          </a>
+        </div>
+        <div className="h-screen w-full flex -mt-32 -ml-40 py-70 lg:h-screen sm:p-70 md:p-70 lg:p-70 lg:-ml-100 lg:-mt-30 lg:w-full">
+          <LayoutGrid cards={cards} />
+        </div>
     </div>
   );
 }
@@ -13,19 +21,34 @@ export function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        House in the woods
+      <p className="font-bold mt-3 md:text-4xl text-xl text-white">
+        Task Manager
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+      <p className="font-normal text-base max-w-lg text-white">
+        A task manager the help you to track all the tracks that you need to do through the day.
       </p>
+       <a href="https://task-manager-gusttav28-gustavos-projects-3920aed2.vercel.app/">
+        <p className="text-xs lg:mt-2 hover:scale-105 transition-transform md:text-lg text-neutral-300">Check the project (click here) </p>
+       </a>
     </div>
   );
 };
 
 const SkeletonTwo = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        TEST
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        WE STILL WORKING ON THIS
+      </p>
+    </div>
+  );
+};
+const SkeletonThree = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
@@ -40,62 +63,32 @@ const SkeletonTwo = () => {
     </div>
   );
 };
-const SkeletonThree = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
-      </p>
-    </div>
-  );
-};
 const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
+        House above the clouds
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+        Perched high above the world, this house offers breathtaking views and a
+        unique living experience. It&apos;s a place where the sky meets home,
+        and tranquility is a way of life.
       </p>
+      
     </div>
   );
 };
 
-const cards = [
+
+
+export const cards = [
   {
+    // next js task ---- TASK MANAGMENT
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 2,
-    content: <SkeletonTwo />,
-    className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 3,
-    content: <SkeletonThree />,
-    className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 4,
-    content: <SkeletonFour />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
+    className: "mb:col-span-1",
+    src:"/assets/project.png", 
+    imageClassName:"-p-10 bg-gray-200",
+  }
 ];

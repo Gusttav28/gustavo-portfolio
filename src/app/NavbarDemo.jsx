@@ -128,6 +128,7 @@ const DummyContent = () => {
         </section>
 
       </div>
+      <h1 className="-mt-65 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:-mt-80 lg:ml-35">Projects</h1>
       <LayoutGridDemo/>
       {/* <CardHoverEffectDemo/> */}
     </div>

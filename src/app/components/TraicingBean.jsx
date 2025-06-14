@@ -30,7 +30,7 @@ export function TracingBeamDemo() {
                 {item.title}
               </p>
 
-              <div className="text-sm lg:text-xl">
+              <div className="text-sm lg:text-lg lg:w-full">
                 {item.description}
               </div>
             
@@ -59,10 +59,10 @@ const dummyContent = [
     description: (
       <>
       
-        <p className="-mb-45 size-70 lg:-mb-46 lg:w-full">
+        <p className="-mb-45 size-70 lg:-mb-57 lg:w-full">
           • Provided professional assistance to over 60 customers daily, addressing inquiries, complaints, and service requests in English.
         </p>
-        <p className="-mb-45 size-70 lg:-mb-46 lg:w-full">
+        <p className="-mb-45 size-70 lg:-mb-57 lg:w-full">
         • Developed strong communication and problem-solving skills by resolving customer issues efficiently and empathetically.
         </p>
         <p className="mb-1 -pt-50 size-70 lg:w-full">
@@ -79,16 +79,16 @@ const dummyContent = [
     description: (
       <>
       <div className="">
-        <p className="-mb-48 lg:mt-6 size-70 lg:w-full">
+        <p className="-mb-48 lg:mt-6 size-70 lg:-mb-57 lg:w-full">
         • Developed a restaurant inventory management system using Python, Flask, and MySQL, optimizing workflow by 70%.
         </p>
-        <p className="-mb-48 size-70 lg:w-full">
+        <p className="-mb-48 size-70 lg:-mb-57 lg:w-full">
         • Implemented key features to identify duplicate products and improve data organization within the database.
         </p>
-        <p className="-mb-43 size-70 lg:w-full">
+        <p className="-mb-43 size-70 lg:-mb-52 lg:w-full">
         • Collaborated with a team to analyze client requirements and design user-friendly interfaces that enhanced the user experience.
         </p>
-        <p className="-mb-43 size-70 lg:w-full">
+        <p className="-mb-43 size-70 lg:-mb-57 lg:w-full">
         • Produced clear and precise technical documentation to ensure system maintainability.
           </p>
 
