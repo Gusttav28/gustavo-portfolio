@@ -1,25 +1,26 @@
 "use client";
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "./components/ui/Navbar";
+// import {
+//   Navbar,
+//   NavBody,
+//   NavItems,
+//   MobileNav,
+//   NavbarLogo,
+//   NavbarButton,
+//   MobileNavHeader,
+//   MobileNavToggle,
+//   MobileNavMenu,
+// } from "./components/ui/Navbar";
 import { useState } from "react";
 import { FlipWords } from "./components/ui/FlipWords";
 import { FlipWords2 } from "./components/ui/FlipWords";
 import { TracingBeamDemo } from "./components/TraicingBean"
-import { LayoutGridDemo } from "./components/LayoutGrid"
-import { CardHoverEffectDemo } from "./components/HoverEffect"
+// import { LayoutGridDemo } from "./components/LayoutGrid"
+// import { CardHoverEffectDemo } from "./components/HoverEffect"
 import { NavbarSimple } from "./components/NavBarMUI2"
-import { FlipWordsDemo } from "./components/FlipWords"
-import Stack from "./components/StackIcons"
+// import { FlipWordsDemo } from "./components/FlipWords"
+// import Stack from "./components/StackIcons"
 import { InfiniteMovingCardsDemo } from "./components/MovingIcons"
+import { ProjectSectionDemo } from "./components/ui/ProjectSections"
 
 export function NavbarDemo() {
   const navItems = [
@@ -128,8 +129,13 @@ const DummyContent = () => {
         </section>
 
       </div>
-      <h1 className="-mt-65 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:-mt-80 lg:ml-35">Projects</h1>
-      <LayoutGridDemo/>
+      <h1 className="-mt-45 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:-mt-90 lg:ml-35">Projects</h1>
+      <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:pr-80 lg:mr-40 lg:ml-20 lg:mt-15">
+        <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting, I talk about my professional career and my educational background more in my <a className="hover:text-blue-500" href="">about section.</a> </label>
+      </div>
+      <section className="lg:mt-20">
+        <ProjectSectionDemo/>
+      </section>
       {/* <CardHoverEffectDemo/> */}
     </div>
   );
