@@ -142,7 +142,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Pages</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">About</ListItem>
       </Typography>
       <Typography
         as="a"
@@ -152,7 +152,7 @@ function NavList() {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Account
+          Projects
         </ListItem>
       </Typography>
       <NavListMenu />
@@ -163,7 +163,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Docs</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">Blog</ListItem>
       </Typography>
     </List>
   );

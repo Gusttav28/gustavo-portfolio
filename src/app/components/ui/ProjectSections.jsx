@@ -3,59 +3,40 @@ import {
   IconAdjustmentsBolt,
   IconCloud,
   IconCurrencyDollar,
-  IconEaseInOut,
+  IconNotes,
   IconHeart,
   IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconRocket,
+  IconRobotFace,
+  IconWind,
+  IconCalculator,
 } from "@tabler/icons-react";
 
 export function ProjectSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Task Manager",
       description:
         "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+      icon: <IconNotes />,
     },
     {
-      title: "Ease of use",
+      title: "Weather App",
       description:
         "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+      icon: <IconWind />,
     },
     {
-      title: "Pricing like no other",
+      title: "Unt Converter",
       description:
         "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+      icon: <IconCalculator />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
-    },
-    {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
-    },
-    {
-      title: "24/7 Customer Support",
+      title: "Jarvis Bot",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
-    },
-    {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
-    },
-    {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      icon: <IconRobotFace />,
     },
   ];
   return (
@@ -77,7 +58,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
         index < 4 && "lg:border-b dark:border-neutral-800"
       )}>

@@ -24,8 +24,8 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
-            Pages
+          <a href="/about" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+            About
           </a>
         </Typography>
         <Typography
@@ -34,8 +34,8 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
-            Account
+          <a href="/projects" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+            Projects
           </a>
         </Typography>
         <Typography
@@ -44,8 +44,8 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
-            Blocks
+          <a href="/blog" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+            Blogs
           </a>
         </Typography>
         <Typography
@@ -54,8 +54,8 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         > 
-          <a href="#" className="block px-4 py-2  hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
-            Docs
+          <a href="/contact" className="block px-4 py-2  hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+            Contact
           </a>
         </Typography>
       </ul>
@@ -82,7 +82,7 @@ export function NavbarSimple() {
       <div className="flex items-center mx-auto w-full justify-between max-w-screen-xl gap-2 text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className=" px-20 py-5 hover:rounded-full"
         > 
