@@ -1,7 +1,8 @@
 "use client"
 
 import { NavbarSimple } from "../components/NavBarMUI2"
-import Stack from "../components/StackIcons"
+
+import ImageIcon from "../components/ImageIcon"
 
 export default function Page() {
     return(
@@ -9,78 +10,65 @@ export default function Page() {
             <NavbarSimple />
             <section className="grid gap-8 md:grid-cols-2">
                 <div className="">
-                    <img className="
-                    // image size
-                    size-48 
-                    rounded-2xl
-                    
-                    @3xs:@min-2xs:size-70
-                    @3xs:@min-2xs:ml-10
-                    @3xs:@min-2xs:mt-5
-
-                    @xs:@min-sm:size-70
-                    @xs:@min-sm:ml-18
-                    @xs:@min-sm:mt-14
-                    
-                    @md:@min-lg:size-80
-                    @md:@min-lg:ml-20
-                    @md:@min-lg:mt-13
-
-                    @xl:@min-2xl:size-90
-                    @xl:@min-2xl:ml-20
-                    @xl:@min-2xl:mt-20
-
-                    @5xl:@min-6xl:size-90
-                    @5xl:@min-6xl:ml-60
-                    @5xl:@min-6xl:mt-30
-
-                    @min-[1200px]:size-100" 
-                    src="https://github.com/Gusttav28.png"  
-                    alt="" />
+                    <ImageIcon/>
                 </div>
-                <div className="@xs:@min-sm:items-center @md:@min-lg:ml-20">
+                <div className="ml-20 @xs:@min-sm:items-center @md:@min-lg:ml-20">
                     <h1 className="
                     font-bold
-                    text-base 
-                    @xs:@min-sm:text-2xl @xs:@min-sm:ml-15 @xs:@min-sm:mt-10
-                    @md:@min-lg:-ml-7 @md:@min-lg:mt-50 @md:@min-lg:text-3xl
+                                                  /* Default for mobile */
+                    
+                    text-2xl  
+                    text-center
+                    -mt-25 
+                    -ml-10
+                                                            /* Center text on small screens */
 
-                    @5xl:@min-6xl:text-4xl
-                    @5xl:@min-6xl:mt-50
-                    @5xl:@min-6xl:mr-50
-                    @5xl:@min-6xl:-ml-10
+                    md:text-3xl md:-ml-15 md:mt-35           /* Adjust for md screens (iPad portrait). Resetting ml if grid handles positioning */
+                    md:text-left                           /* Align left on medium screens and up */
+                    
+                    lg:text-4xl lg:mt-45 lg:-ml-44           /* Adjust for lg screens (iPad landscape, desktops) */
+                    
+                    xl:text-5xl xl:mt-40                   /* For larger desktops */
+
+                    /* If your @5xl/@6xl ccontainer query breakpoints are large enough to hit desktop sizes */
+                    2xl:text-5xl
+                    2xl:mt-95
+                    2xl:mr-50
+                    2xl:-ml-20                   /* Be careful with negative margins, can break layout easily */
+                    
+                    
+                    @min-[1200px]:-ml-30 @min-[1200px]:mt-60             /* This means 'when container is sdf6xl, and viewport is less than asdf1400px wide' */
                     
                     ">Hey! Hi you there, My Name is Gustavo! And I'm Software Engineer.</h1>
                 </div>
                 <div className="
-                    @3xs:@min-2xs:mt-4 @3xs:@min-2xs:-ml-130
-                    @xs:@min-sm:-mt-15 @xs:@min-sm:-ml-130
-                    @md:@min-lg:mt-28
-                    @md:@min-lg:-ml-120
-                    @5xl:@min-6xl:mt-30 @5xl:@min-6xl:-ml-80
-                ">
-                    <Stack/>
-                </div>
-                <div className="
-                    @xs:@min-sm:p-3 @xs:@min-sm:-mt-5
-                    @md:@min-lg:mt-10 @md:@min-lg:-ml-90 @md:@min-lg:mr-10
-                    @xl:@min-2xl:-ml-90 @xl:@min-2xl:p-1 @xl:@min-2xl:mr-10
-                    @5xl:@min-6xl:-ml-104 @5xl:@min-6xl:max-w-fit
+                    p-3 mt-10                            /* Default for mobile */
+
+                    md:text-xl md:-mr-100 md:-ml-30 md:-mt-20     /* Adjust for md screens (iPad portrait) */
+                    lg:text-xl lg:-mt-20 lg:-ml-60 lg:-mr-130  
+                    
+                    xl:-mr-170
+                    /* Adjust for lg screens (iPad landscape, desktops) */
+    
+                    
+                    
                 ">
                     <p className="
-                    @xs:@min-sm:text-xl
-                    @md:@min-lg:text-2xl @md:@min-lg:-ml-10
-                    @xl:@min-2xl:text-2xl
+                     text-base                        /* Default font size */
+                    md:text-2xl md:ml-40            /* For md screens (iPad portrait) */
+                    lg:text-2xl lg:ml-80            /* For lg screens (iPad landscape, desktops) */
+                    xl:text-2xl xl:ml-130
                     ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi reprehenderit quos quaerat esse facere culpa eos necessitatibus? A, molestiae? Fugit vel sit iste consequuntur blanditiis laborum eaque, molestiae dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis magnam eum aperiam optio consectetur adipisci laboriosam sequi fugiat illum sit natus consequuntur, voluptas quaerat explicabo animi veritatis magni nam possimus alias inventore non! Tempore voluptatem vel totam modi saepe voluptas officia assumenda
                     </p>
                     <p className="
-                    @xs:@min-sm:text-xl @xs:@min-sm:mt-10
-                    @md:@min-lg:text-2xl @md:@min-lg:-ml-10 @md:@min-lg:mt-10
-                    @xl:@min-2xl:text-2xl @xl:@min-2xl:mt-10">
+                    text-base                        /* Default font size */
+                    md:text-2xl md:ml-40            /* For md screens (iPad portrait) */
+                    lg:text-2xl lg:ml-80            /* For lg screens (iPad landscape, desktops) */
+                    xl:text-2xl xl:ml-130">
                     illo, iusto, molestiae mollitia laboriosam repellat! Hic alias voluptates sunt maxime est, tenetur error ea suscipit doloremque delectus autem recusandae, blanditiis repellat, possimus culpa magnam commodi veniam molestias optio ad aspernatur nemo. Incidunt id cumque fugiat debitis nihil hic, nobis perferendis eveniet deleniti? Iusto ducimus laboriosam quibusdam possimus exercitationem sapiente nihil quasi tempore, tenetur dolore excepturi placeat.</p>
                 </div>
                 <section>
-                    <h1>My current years here</h1>
+                    {/* <h1>My current years here</h1> */}
                 </section>
             </section>
         </div>
