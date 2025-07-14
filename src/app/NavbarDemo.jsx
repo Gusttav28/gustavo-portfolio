@@ -57,10 +57,10 @@ const DummyContent = () => {
       <section className="ml-5 lg:mt-20">
         <ProjectSectionDemo/>
       </section>
-      <section>
+      <div>
         <UnderPage/>
         {/* <WorldMapDemo/> */}
-      </section>
+      </div>
     </div>
   );
 };

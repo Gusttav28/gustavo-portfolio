@@ -53,7 +53,7 @@ export default function Page() {
                                                 /* Default for mobile */
 
                     md:text-xl md:-mr-100 md:-ml-30 md:-mt-20     /* Adjust for md screens (iPad portrait) */
-                    lg:text-xl lg:-mt-20 lg:-ml-60 lg:-mr-130  
+                    lg:text-xl lg:-mt-20 lg:-ml-100 lg:-mr-140  
                     
                     xl:-mr-170
                     /* Adjust for lg screens (iPad landscape, desktops) */
@@ -61,20 +61,28 @@ export default function Page() {
                 ">
                     <p className="
                      text-base
-                     ml-2                      /* Default font size */
+                     ml-5                     /* Default font size */
                     md:text-2xl md:ml-40            /* For md screens (iPad portrait) */
-                    lg:text-2xl lg:ml-80            /* For lg screens (iPad landscape, desktops) */
-                    xl:text-2xl xl:ml-130
+                    lg:text-2xl lg:ml-120            /* For lg screens (iPad landscape, desktops) */
+                    xl:text-2xl xl:ml-145
                     ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi reprehenderit quos quaerat esse facere culpa eos necessitatibus? A, molestiae? Fugit vel sit iste consequuntur blanditiis laborum eaque, molestiae dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis magnam eum aperiam optio consectetur adipisci laboriosam sequi fugiat illum sit natus consequuntur, voluptas quaerat explicabo animi veritatis magni nam possimus alias inventore non! Tempore voluptatem vel totam modi saepe voluptas officia assumenda
                     </p>
                     <p className="
                     text-base
                     mt-7
-                    ml-2                        /* Default font size */
+                    ml-5                       /* Default font size */
                     md:text-2xl md:ml-40 md:mt-7            /* For md screens (iPad portrait) */
-                    lg:text-2xl lg:ml-80 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
-                    xl:text-2xl xl:ml-130 xl:mt-7">
+                    lg:text-2xl lg:ml-120 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
+                    xl:text-2xl xl:ml-145 xl:mt-7">
                     illo, iusto, molestiae mollitia laboriosam repellat! Hic alias voluptates sunt maxime est, tenetur error ea suscipit doloremque delectus autem recusandae, blanditiis repellat, possimus culpa magnam commodi veniam molestias optio ad aspernatur nemo. Incidunt id cumque fugiat debitis nihil hic, nobis perferendis eveniet deleniti? Iusto ducimus laboriosam quibusdam possimus exercitationem sapiente nihil quasi tempore, tenetur dolore excepturi placeat.</p>
+                    <p className="
+                    text-2xl
+                    mt-7
+                    ml-5                       /* Default font size */
+                    md:text-2xl md:ml-40 md:mt-7            /* For md screens (iPad portrait) */
+                    lg:text-2xl lg:ml-120 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
+                    xl:text-2xl xl:ml-130 xl:mt-7">
+                    TE AMO MI AMOOOOR ERES EL AMOR DE MI VIDA 😍😍😍❤️🥹.</p>
                 </div>
                 <section className="
                     mt-2
@@ -195,10 +203,9 @@ export default function Page() {
                         </svg>
                         <p className="flex ml-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
                     </div>
-                </section>
-                <UnderPage/>
-                
+                </section>                
             </section>
+            <UnderPage/>
         </div>
     )
 }

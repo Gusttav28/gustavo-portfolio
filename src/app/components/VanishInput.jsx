@@ -21,7 +21,7 @@ export function PlaceholdersAndVanishInputDemo() {
   return (
     <div className="h-[10rem] flex flex-col justify-center items-center -mt-5  size-80 ml-12 px-2
       md:size-100 md:-mt-35 md:ml-50
-      lg:size-110 lg:ml-90
+      lg:size-110 lg:-ml-10
       xl:ml-155 xl:-mt-42
     ">
       {/* <h2
