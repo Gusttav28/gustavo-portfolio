@@ -17,7 +17,7 @@ export default function UnderPage() {
                 <div className="flex 
                     ml-5
                     md:ml-55
-                    lg:-ml-40
+                    lg:-ml-10
                     xl:-ml-36
 
                 ">
@@ -31,7 +31,7 @@ export default function UnderPage() {
             </section>  
             <div className="flex ml-15
                 md:ml-60
-                lg:ml-108
+                lg:ml-138
                 xl:ml-210
             
             ">
@@ -57,7 +57,7 @@ export default function UnderPage() {
                     </p>
                 </div>
             </div>
-            <div className="lg:-ml-40 xl:ml-2">
+            <div className="lg:ml-90 xl:ml-2">
                 <PlaceholdersAndVanishInputDemo/>
             </div>
         </div>

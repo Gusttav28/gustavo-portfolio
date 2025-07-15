@@ -38,6 +38,11 @@ const DummyContent = () => {
             Hello! My Name is Gustavo! And I'm Software Engineer student who is exited to build and to contribute growing the next generation of software development and technology industries.
           </p>
         </div>
+        <div className="-mt-50 ml-280 -mb-10">
+          <a href="/assets/cv.pdf">
+            <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-xl font-bold p-6">Download CV</button>
+          </a>
+        </div>
         <div>
           <h1 className="mt-50 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:mt-80">Technologies</h1>
           <InfiniteMovingCardsDemo/>
