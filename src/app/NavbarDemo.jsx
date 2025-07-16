@@ -42,7 +42,7 @@ const DummyContent = () => {
         md:ml-65
         lg:-mb-10 lg:-mt-60 lg:ml-200
         xl:-mt-60 xl:ml-280 xl:-mb-10">
-          <a href="/assets/gc-cv.pdf">
+          <a href="/assets/cv-IIV.pdf">
             <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold p-4 md:p-6 md:text-base lg:p-6 lg:text-base xl:p-6 xl:text-xl">Download CV</button>
           </a>
         </div>
