@@ -17,25 +17,25 @@ export function ProjectSectionDemo() {
     {
       title: "Task Manager",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Task Manager App to record all the things that you might need to do in the future.",
       icon: <IconNotes />,
     },
     {
       title: "Weather App",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Weather App that to chech the weather of any country that you select and further",
       icon: <IconWind />,
     },
     {
       title: "Unt Converter",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Unit converter calculator to check all the types of units to convert",
       icon: <IconCalculator />,
     },
     {
-      title: "Jarvis Bot",
+      title: "Neo",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Virtual assistence that can provide you any type of resume related to general world notice, financial market and ultimate scientifics articles",
       icon: <IconRobotFace />,
     },
   ];

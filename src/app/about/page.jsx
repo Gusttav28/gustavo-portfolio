@@ -75,14 +75,6 @@ export default function Page() {
                     lg:text-2xl lg:ml-120 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
                     xl:text-2xl xl:ml-145 xl:mt-7">
                     illo, iusto, molestiae mollitia laboriosam repellat! Hic alias voluptates sunt maxime est, tenetur error ea suscipit doloremque delectus autem recusandae, blanditiis repellat, possimus culpa magnam commodi veniam molestias optio ad aspernatur nemo. Incidunt id cumque fugiat debitis nihil hic, nobis perferendis eveniet deleniti? Iusto ducimus laboriosam quibusdam possimus exercitationem sapiente nihil quasi tempore, tenetur dolore excepturi placeat.</p>
-                    <p className="
-                    text-2xl
-                    mt-7
-                    ml-5                       /* Default font size */
-                    md:text-2xl md:ml-40 md:mt-7            /* For md screens (iPad portrait) */
-                    lg:text-2xl lg:ml-120 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
-                    xl:text-2xl xl:ml-130 xl:mt-7">
-                    TE AMO MI AMOOOOR ERES EL AMOR DE MI VIDA 😍😍😍❤️🥹.</p>
                 </div>
                 <section className="
                     mt-2

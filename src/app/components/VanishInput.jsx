@@ -4,11 +4,10 @@ import { PlaceholdersAndVanishInput } from "./ui/VanishInput";
 
 export function PlaceholdersAndVanishInputDemo() {
   const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis Hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
+    "Let's talk",
+    "I'm Interested",
+    "Let's build the future together",
+    "Write me down a email or a whatsapp!", 
   ];
 
   const handleChange = (e) => {

@@ -10,15 +10,15 @@ export default function UnderPage() {
             ml-15 mt-20 items-center 
             md:ml-10 md:mt-20
             lg:mt-35 lg:ml-150 
-            xl:ml-210
+            xl:ml-190
             
             
             ">
                 <div className="flex 
-                    ml-5
+                    ml-3
                     md:ml-55
                     lg:-ml-10
-                    xl:-ml-36
+                    xl:-ml-20
 
                 ">
                     <img className="size-15 lg:-ml-40 xl:ml-2 rounded-full" src="https://github.com/Gusttav28.png" alt="" />
@@ -48,16 +48,13 @@ export default function UnderPage() {
                 <div className="relative">
                     <p className=" mt-10 max-w-lg -ml-50 mr-5 text-center text-sm font-normal text-neutral-300
                         md:-ml-66 md:-mr-80
-                        xl:-ml-66                    
+                        xl:-ml-70                    
                     ">
-                        Spotlight effect is a great way to draw attention to a specific part
-                        of the page. Here, we are drawing the attention towards the text
-                        section of the page. I don&apos;t know why but I&apos;m running out of
-                        copy.
+                        Based on my technical background in modern software development and my previous professional experience in customer service, I believe I can contribute positively to dynamic teams, helping to develop high-quality tools and products. Send me a message and let's talk about it!
                     </p>
                 </div>
             </div>
-            <div className="lg:ml-90 xl:ml-2">
+            <div className="lg:ml-90 xl:-ml-3">
                 <PlaceholdersAndVanishInputDemo/>
             </div>
         </div>

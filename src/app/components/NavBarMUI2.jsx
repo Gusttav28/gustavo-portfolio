@@ -9,6 +9,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
  
 function NavList() {
+  const windowAlert = () =>{
+    alert("Gustavo is still working on this page")
+  }
   return (
     <div className="mt-4">
       <ul className="my-2 
@@ -24,8 +27,9 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="/about" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+          <a href="/about" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold" onClick={windowAlert}>
             About
+            
           </a>
         </Typography>
         <Typography
@@ -34,7 +38,7 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="/projects" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+          <a href="/projects" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold" onClick={windowAlert}>
             Projects
           </a>
         </Typography>
@@ -44,7 +48,7 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="/blog" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+          <a href="/blog" className="block px-4 py-2 items-center hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold" onClick={windowAlert}>
             Blogs
           </a>
         </Typography>
@@ -54,7 +58,7 @@ function NavList() {
           color="blue-gray"
           className="p-1 font-medium"
         > 
-          <a href="/contact" className="block px-4 py-2  hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold">
+          <a href="/contact" className="block px-4 py-2  hover:bg-gray-900 hover:rounded-full hover:scale-105 transition-transform font-bold" onClick={windowAlert}>
             Contact
           </a>
         </Typography>

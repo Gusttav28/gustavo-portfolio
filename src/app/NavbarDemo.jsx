@@ -25,11 +25,11 @@ const DummyContent = () => {
   return (
     <div className="overflow-x-hidden bg-black sm:p-6">
       <div className="mr-15 mt-12 sm:ml-12 text-4xl md:ml-14 lg:pl-10">
-        <h1 className="ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
+        <h1 className="ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">
         <FlipWords2 words={words} /> <br />
         </h1>
         <div className="ml-11">
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-4xl xl:text-5xl">
             <FlipWords words={words2} /> <br />
           </h1>
         </div>
@@ -38,12 +38,12 @@ const DummyContent = () => {
             Hello! My Name is Gustavo! And I'm Software Engineer student who is exited to build and to contribute growing the next generation of software development and technology industries.
           </p>
         </div>
-        <div className="mt-20 ml-25 -mb-20 
-        md:ml-60
-        lg:-mb-40 lg:ml-10
-        xl:-mt-50 xl:ml-280 xl:-mb-10">
+        <div className="mt-20 ml-30 -mb-20 
+        md:ml-65
+        lg:-mb-10 lg:-mt-60 lg:ml-200
+        xl:-mt-60 xl:ml-280 xl:-mb-10">
           <a href="/assets/cv.pdf">
-            <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-xl font-bold p-6">Download CV</button>
+            <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold p-4 md:p-6 md:text-base lg:p-6 lg:text-base xl:p-6 xl:text-xl">Download CV</button>
           </a>
         </div>
         <div>
@@ -58,7 +58,7 @@ const DummyContent = () => {
         </section>
 
       </div>
-      <h1 className="-mt-75 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:-mt-120 lg:ml-35 xl:-mt-90 xl:ml-35">Projects</h1>
+      <h1 className="-mt-50 ml-11 text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:-mt-120 lg:ml-35 xl:-mt-90 xl:ml-35">Projects</h1>
       <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:pr-80 lg:mr-40 lg:ml-20 lg:mt-15">
         <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting, I talk about my professional career and my educational background more in my <a className="hover:text-blue-500" href="">about section.</a> </label>
       </div>
