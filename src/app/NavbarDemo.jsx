@@ -58,7 +58,7 @@ const DummyContent = () => {
         </section>
 
       </div>
-      <h1 className="-mt-72 ml-11 text-left text-3xl sm:text-4xl md:text-4xl md:-mt-50  lg:text-5xl font-bold lg:-mt-75 lg:ml-35 xl:-mt-95 xl:ml-35">Projects</h1>
+      <h1 className="-mt-30 ml-11 text-left text-3xl sm:text-4xl md:text-4xl md:-mt-50  lg:text-5xl font-bold lg:-mt-75 lg:ml-35 xl:-mt-95 xl:ml-35">Projects</h1>
       <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:pr-80 lg:mr-40 lg:ml-20 lg:mt-15">
         <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting, I talk about my professional career and my educational background more in my <a className="hover:text-blue-500" href="">about section.</a> </label>
       </div>
