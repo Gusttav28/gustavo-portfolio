@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { FlipWords } from "./components/ui/FlipWords";
 import { FlipWords2 } from "./components/ui/FlipWords";
@@ -7,76 +7,27 @@ import { NavbarSimple } from "./components/NavBarMUI2"
 import { InfiniteMovingCardsDemo } from "./components/MovingIcons"
 import { ProjectSectionDemo } from "./components/ui/ProjectSections"
 import UnderPage from "./components/UnderPage"
-import { documentToHtmlString } from "@contentful/rich-text-types"
-import { Content } from "next/font/google";
-import React, { useState, useEffect } from 'react';
-
+import dataApi from "./components/ContentFulAPI"
+import React, {useEffect} from "react"
 
 
 
 export async function NavbarDemo() {
-
-
-  async function api() {
-    const [data, setData] = useState(null)
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await fetch(process.env.NEXT_PUBLIC_CONTENTFUL)
-          if(!response.ok){
-            throw new Error(`http err ${res.status}`)
-          }
-          const data = await response.json()
-          setData(jsonData);
-          console.log("this is the data ", data)
-        } catch (error) {
-          console.error("error fetching data", error)
-        }
-      }
-      fetchData()
-    },[])
+  async function fetchData(){
+    try {
+      const res = await fetch(process.env.NEXT_PUBLIC_CONTENTFUL)
+      const data = await res.json()
+      const dataInfo = data.fields.description1
+      console.log(dataInfo)
+      return data
+    } catch (error) {
+      console.log("this is the data err", error)
+    }
   }
-  api()
-  // async function Contentful() {
-  // }
-  // const res = await Contentful()
-  // async function ContentFul() {
-  //   const plainClient = contenful.createClient({
-  //     accessToken: "J-qhv6BP1dtfJLOB0-uMQuVmkg2lX22ntVHQLnmRZWU",
-  //   }, {
-  //     type:'plain'})
-  
-  //   const enviroment = await plainClient.environment.get({
-  //     spaceId:'f20l8i6up4k5',
-  //     environmentId:"master", 
-  //   })
 
-  //   const scopedPlainClient = contentful.createClient(
-  //     {
-  //       accessToken: 'J-qhv6BP1dtfJLOB0-uMQuVmkg2lX22ntVHQLnmRZWU',
-  //     },
-  //     {
-  //       type: 'plain',
-  //       defaults: {
-  //         spaceId: 'f20l8i6up4k5',
-  //         environmentId: 'master',
-  //       },
-  //     }
-  //   )
-  //   const entries = await plainClient.entry.getMany({
-  //     query:{
-  //       skip:10,
-  //       limit:10,
-  //     },
-  //   })
-    
-  // }
-
-
-  // (async () => {
-  //   const env = await Connect();
-  //   console.log(env)
-  // })();
+  useEffect(() => {
+    console.log(fetchData())
+  })
 
   return (
     <div className="overflow-x-hidden">

@@ -1,21 +1,22 @@
 "use client"
+import React, { useState, useEffect} from "react"
 
-import { documentToHtmlString } from "@contentful/rich-text-types"
+export default function dataApi() {
+  const [data, setData] = useState([])
 
-const client  = require('contentful').createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
-});
-
-export async function fetchInfo() {
-    const entries = await client.getEntries({
-        content_type: "portfolio"
-    });
-    if (entries.items){
-        return{
-            items: entries.items
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(process.env.NEXT_PUBLIC_CONTENTFUL)
+        if (!response.ok) {
+          throw new Error("this the error ", response.status)
         }
-    }
+        const result = await response.json()
+        setData(result)
+      } catch (error) {
+        console.log("this is the error ", error)
+      }
+    };
+    fetchData()
+  }, [])
 }
-
-export default client;
