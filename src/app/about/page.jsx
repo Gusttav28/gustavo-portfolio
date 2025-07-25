@@ -65,7 +65,7 @@ export default function Page() {
                     md:text-2xl md:ml-40            /* For md screens (iPad portrait) */
                     lg:text-2xl lg:ml-120            /* For lg screens (iPad landscape, desktops) */
                     xl:text-2xl xl:ml-145
-                    ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi reprehenderit quos quaerat esse facere culpa eos necessitatibus? A, molestiae? Fugit vel sit iste consequuntur blanditiis laborum eaque, molestiae dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quis magnam eum aperiam optio consectetur adipisci laboriosam sequi fugiat illum sit natus consequuntur, voluptas quaerat explicabo animi veritatis magni nam possimus alias inventore non! Tempore voluptatem vel totam modi saepe voluptas officia assumenda
+                    ">Since I was a little kid I was so entusiastic with the technology and so couriouse with it, that curoiuse actually guide me to kind of cratch the computer of my family that it was in my home after try to create a partion to be able to put two different of operating systems, windows and ubuntu; Sorry mom hahaha  
                     </p>
                     <p className="
                     text-base
@@ -74,7 +74,8 @@ export default function Page() {
                     md:text-2xl md:ml-40 md:mt-7            /* For md screens (iPad portrait) */
                     lg:text-2xl lg:ml-120 lg:mt-7            /* For lg screens (iPad landscape, desktops) */
                     xl:text-2xl xl:ml-145 xl:mt-7">
-                    illo, iusto, molestiae mollitia laboriosam repellat! Hic alias voluptates sunt maxime est, tenetur error ea suscipit doloremque delectus autem recusandae, blanditiis repellat, possimus culpa magnam commodi veniam molestias optio ad aspernatur nemo. Incidunt id cumque fugiat debitis nihil hic, nobis perferendis eveniet deleniti? Iusto ducimus laboriosam quibusdam possimus exercitationem sapiente nihil quasi tempore, tenetur dolore excepturi placeat.</p>
+                    Perhaps like any other history, after you get some real touch with the technology you would no be able to have another life, you would convert in some robot or something like that, and sometimes that's not the case, like mine, In my case I was able to get in touch with a bit of HTML and CSS and it was awesome, but since I was a litlle kid, I didn't continue with it becasue I had regular things to do as a normal kid, I needed to go to school and so and on, so yeah, that was my case, I touch the technology (programing for being more specific) and it was great, but I didn't continue, until the year that I got to collage, check bellow to watch the whole path.  
+                    </p>
                 </div>
                 <section className="
                     mt-2
@@ -135,7 +136,8 @@ export default function Page() {
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                         </svg>
-                    <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
+                    <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+                        Than continue with my developing path career</p>
                     </div>
 
                     <div className="flex ml-6    
@@ -172,7 +174,8 @@ export default function Page() {
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                         </svg>
-                    <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
+                    <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+                        One of my first real touch was when I started to learn python in master mind academy before to got to callage.</p>
                     </div>
 
                     <div className="flex ml-6    
@@ -183,7 +186,8 @@ export default function Page() {
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                         </svg>
-                        <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
+                        <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+                            Than on collage I started to learn pseudo code and Java, what actually I was very new for that languaje but it was so fun to learn.</p>
                     </div>
                     <div className="flex ml-6    
                     mr-100
@@ -193,7 +197,8 @@ export default function Page() {
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
                         </svg>
-                        <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
+                        <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+                            And than learn about cloud systems and data bases was the main frame for to start to develop my own applications.</p>
                     </div>
                 </section>                
             </section>

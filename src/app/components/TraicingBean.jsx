@@ -10,8 +10,8 @@ export function TracingBeamDemo() {
     <div className="mb-50 w-full -px-25 -mt-105 lg:mb-100 lg:-mt-80">     
       <TracingBeam className="-px-5 w-full sm:px-4 lg:px-8">
         <div className="flex items-center gap-2 mb-20 -ml-6 lg:mb-20 lg:-ml-11">
-          <h1 className="text-left text-3xl ml-4 sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:ml-3">Work</h1>
-          <h1 className="text-left text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold lg:ml-1">Experience</h1>
+          <h1 className="text-left text-2xl ml-4 sm:text-4xl md:text-4xl lg:text-3xl font-bold lg:ml-3">Work</h1>
+          <h1 className="text-left text-2xl sm:text-4xl md:text-4xl lg:text-3xl font-bold lg:ml-1">Experience</h1>
         </div>
         <div className="w-full max-w-5xl mx-auto pt-4">
           {dummyContent.map((item, index) => (
@@ -27,11 +27,11 @@ export function TracingBeamDemo() {
                 {item.badge}
             </h2>
 
-              <p className={twMerge(calsans.className, "text-xl mb-4 lg:text-3xl")}>
+              <p className={twMerge(calsans.className, "text-xl mb-4 lg:text-xl")}>
                 {item.title}
               </p>
 
-              <div className="text-sm lg:text-lg lg:w-full">
+              <div className="text-sm lg:text-base lg:w-full">
                 {item.description}
               </div>
             
