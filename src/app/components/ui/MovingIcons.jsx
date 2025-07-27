@@ -75,8 +75,8 @@ export const InfiniteMovingCards = ({
       ? <Image 
           src={item.image} 
           alt={item.name} 
-          width={100} 
-          height={100} 
+          width={60} 
+          height={60} 
           className="object-cover scale-75 lg:scale-75 hover:scale-80 transition transform"
         />
       : null
