@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "./ui/MovingIcons";
 export function InfiniteMovingCardsDemo() {
   return (
     <div
-      className="h-[35rem] mt-10 -mb-40 lg:mt-30 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      className="h-[5rem] mt-10 -mb-10 lg:mt-30 dark:bg-dark dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
     </div>
   );

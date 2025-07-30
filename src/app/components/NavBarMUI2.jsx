@@ -90,7 +90,7 @@ export function NavbarSimple() {
           variant="h6"
           className=" px-20 py-5 hover:rounded-full"
         > 
-        <div className="flex items-center gap-1 -ml-7 bg-gray-900 rounded-full hover:scale-105 transition-transform">
+        <div className="flex items-center gap-1 -ml-7 2xl:-ml-40 bg-gray-900 rounded-full hover:scale-105 transition-transform">
           <img className="size-15 rounded-full" src="https://github.com/Gusttav28.png" alt="" />
 
           <div className="mr-5 py-4 pt-4 pr-5 bg-gray-900 rounded-full sm:rounded-full md:rounded-full lg:rounded-full">

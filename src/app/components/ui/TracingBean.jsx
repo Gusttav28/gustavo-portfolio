@@ -63,7 +63,7 @@ export const TracingBeam = ({
             className="h-3 w-3 rounded-full border border-neutral-300 bg-white" />
         </motion.div>
         <svg
-          viewBox={`0 0 20 ${svgHeight + 200}`}
+          viewBox={`0 0 20 ${svgHeight + 100}`}
           width="23"
           // Set the SVG height
           height={svgHeight}

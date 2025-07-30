@@ -9,7 +9,7 @@ export default function UnderPage() {
             <section className="
             ml-15 mt-20 items-center 
             md:ml-10 md:mt-20
-            lg:mt-35 lg:ml-150 
+            lg:mt-35 lg:ml-165 
             xl:ml-190
             
             
@@ -31,7 +31,7 @@ export default function UnderPage() {
             </section>  
             <div className="flex ml-15
                 md:ml-60
-                lg:ml-138
+                lg:ml-148
                 xl:ml-210
             
             ">
@@ -54,7 +54,7 @@ export default function UnderPage() {
                     </p>
                 </div>
             </div>
-            <div className="lg:ml-90 xl:-ml-3">
+            <div className="lg:ml-105 xl:-ml-3">
                 <PlaceholdersAndVanishInputDemo/>
             </div>
         </div>
