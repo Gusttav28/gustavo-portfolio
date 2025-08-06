@@ -4,8 +4,78 @@ import { NavbarSimple } from "../components/NavBarMUI2"
 
 import ImageIcon from "../components/ImageIcon"
 import UnderPage from "../components/UnderPage"
+import { twMerge } from "tailwind-merge"
 
 export default function Page() {
+    const pathYears = [
+        {
+        year:"2025",
+        description:(
+            <>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto placeat ad dolores rem ipsa veniam voluptatibus dignissimos sunt cumque, voluptate corporis? Odio molestiae expedita ipsam reiciendis amet ex repudiandae.
+            </p>
+            </>
+        ),
+        badge:(
+            <>
+                <hr className="bg-blue-900 p-0.5"></hr>
+            </>
+        )
+        },
+        {
+        year:"2024",
+        description:(
+            <>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos facilis nostrum deleniti dolorum id architecto asperiores sit veniam. Quas maxime illo inventore, laborum reprehenderit quod fuga tempora suscipit excepturi nemo?
+            </p>
+            </>
+        ),
+        badge:(
+            <>
+                <hr className="bg-blue-900 p-0.5"></hr>
+            </>
+        )
+        },
+        {
+        year:"2023",
+        description:(
+            <>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore doloribus quo cum ex illum, beatae suscipit quas excepturi, porro quis odio ipsa eos autem inventore architecto magnam corporis. Aut.s 
+            </p>
+            </>
+        ),
+        badge:(
+            <>
+                <hr className="bg-blue-900 p-0.5"></hr>
+            </>
+        )
+        },
+        {
+        year:"2022",
+        description:(
+            <>
+            <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">
+            One of my first real touch was when I started to learn python in master mind academy before to got to callage.
+            </p>
+            <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">
+            Than on collage I started to learn pseudo code and Java, what actually I was very new for that languaje but it was so fun to learn.
+            </p>
+            <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+            And than learn about cloud systems and data bases was the main frame for to start to develop my own applications.
+            </p>
+            </>
+        ),
+        badge:(
+            <>
+                <hr className="bg-blue-900 p-0.5"></hr>
+            </>
+        ) 
+        },
+    ]
+
     return(
         <div className="@container overflow-x-hidden">
             <NavbarSimple />
@@ -80,91 +150,28 @@ export default function Page() {
                     mr-40       
                     md:mt-140 md:mr-70 md:ml-50
                     lg:mt-100 lg:mr-70 lg:ml-15  
-                    xl:mt-90
-                ">
-                    <label className="ml-10 text-2xl font-bold
-                        md:-ml-140 md:text-3xl md:mr-20
-                        lg:-ml-140 lg:mt-20
-                        xl:-ml-140   
-                    
-                    " htmlFor="">2025</label>
-                    <div className="flex 
-                    ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                    <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
-                    </div>
-                    <div className="flex ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                    <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
-                    </div>
-                    <div className="flex ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                    <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
-                    </div>
-                    
-                    <div className="h-px bg-gradient-to-r from-neutral-500 to-transparent w-340 mb-6 -ml-140 mt-12"></div>
-                    
-                    <label className="ml-10 text-2xl font-bold
-                        md:-ml-140 md:text-3xl md:mr-20
-                        lg:-ml-140 lg:mt-20
-                        xl:-ml-140" htmlFor="">2024</label>
-                    <div className="flex ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                    <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis rerum nostrum, expedita, eaque asperiores tempora ratione nam sapiente sunt adipisci beatae iusto! Vitae, quasi. Enim omnis aut possimus autem quaerat.</p>
-                    </div>
-
-                    <div className="flex ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                        <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
-                    </div>
-                    <div className="flex ml-6    
-                    mr-100
-                    md:-ml-140 md:-mr-20
-                    mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="currentColor" className="bi bi-check-circle text-cyan-300 size-8 md:size-7 lg:size-5 xl:size-3 xl:mt-1" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                        </svg>
-                        <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum nostrum impedit facere quasi dolore accusamus quibusdam hic cum dolores, atque tempore inventore dignissimos quaerat, illo autem sit distinctio dolorem! Velit!</p>
-                    </div>
-                    <div className="h-px bg-gradient-to-r from-neutral-500 to-transparent w-340 mb-6 -ml-140 mt-12"></div>
-                    
-                    <label className="ml-10 text-2xl font-bold
-                        md:-ml-140 md:text-3xl md:mr-20
-                        lg:-ml-140 lg:mt-20
-                        xl:-ml-140" htmlFor="">2023</label>
-                    <div className="flex ml-6    
+                    xl:mt-70
+                "> 
+                    {pathYears.map((item, index) => (
+                        <div key={index}>
+                            <h2 className={twMerge(
+                                item.year === "2025" && "text-2xl font-bold -ml-175",
+                                item.year === "2024" && "text-2xl font-bold -ml-175",
+                                item.year === "2023" && "text-2xl font-bold -ml-175",
+                                item.year === "2022" && "text-2xl font-bold -ml-175",
+                            )}>
+                                {item.year}
+                            </h2>
+                            <div className="-ml-178 p-0.5">
+                                <label className="">{item.badge}</label>
+                            </div>
+                            <div className="text-xl -ml-175 mb-4 mt-2">
+                                {item.description}                                
+                            </div>
+                        </div>
+                    ))}           
+                
+                    {/* <div className="flex ml-6    
                     mr-100
                     md:-ml-140 md:-mr-20
                     mt-10">
@@ -197,7 +204,7 @@ export default function Page() {
                         </svg>
                         <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
                             And than learn about cloud systems and data bases was the main frame for to start to develop my own applications.</p>
-                    </div>
+                    </div> */}
                 </section>                
             </section>
             <UnderPage/>

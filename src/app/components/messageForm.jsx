@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "./ui/messageFormInput";
 import { Input } from "./ui/messageFormLabel";
 import { cn } from "@/lib/utils";
@@ -11,9 +11,20 @@ import {
 import { StatefulButtonDemo } from "./sendButton"
 
 export function SignupFormDemo() {
+  const [inputState, setInputState] = useState("")
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
+    const value = e.target.value
+    setInputState(value)
+    console.log(value)
+  };
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+    setInputState("")
   };
   return (
     <div
@@ -24,12 +35,15 @@ export function SignupFormDemo() {
       <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
         Thank you for being here, now let's build the future together!
       </p>
-      <form className="my-8" onSubmit={handleSubmit}>
+      <form className="my-8">
         <div
           className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
           <LabelInputContainer>
             <label className="text-neutral-500" htmlFor="">Name</label>
-            <input className="shadow-input dark:placeholder-text-neutral-600 flex h-10 w-full rounded-md border-none bg-gray-50 px-3 py-2 text-sm text-black transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600`" type="text" />
+            <input className="shadow-input dark:placeholder-text-neutral-600 flex h-10 w-full rounded-md border-none bg-gray-50 px-3 py-2 text-sm text-black transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600`" type="text" 
+            value={inputState}
+            onChange={handleSubmit}
+            />
             {/* <Label htmlFor="firstname">First name</Label>
             <Input id="firstname" placeholder="Tyler" type="text" /> */}
           </LabelInputContainer>
@@ -58,7 +72,7 @@ export function SignupFormDemo() {
 
         <button
           className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
-          type="submit">
+          type="submit" onClick={handleButtonClick}>
           Send &rarr;
           <BottomGradient />
         </button>
