@@ -19,7 +19,7 @@ export default function Page() {
         ),
         badge:(
             <>
-                <hr className="bg-blue-900 p-0.5"></hr>
+                <hr className="bg-neutral-800 p-0.5"></hr>
             </>
         )
         },
@@ -34,7 +34,7 @@ export default function Page() {
         ),
         badge:(
             <>
-                <hr className="bg-blue-900 p-0.5"></hr>
+                <hr className="bg-neutral-800 p-0.5"></hr>
             </>
         )
         },
@@ -49,7 +49,7 @@ export default function Page() {
         ),
         badge:(
             <>
-                <hr className="bg-blue-900 p-0.5"></hr>
+                <hr className="bg-neutral-800 p-0.5"></hr>
             </>
         )
         },
@@ -57,20 +57,20 @@ export default function Page() {
         year:"2022",
         description:(
             <>
-            <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">
+            <p className="">
             One of my first real touch was when I started to learn python in master mind academy before to got to callage.
             </p>
-            <p className="flex ml-2 mt-2 text-sm md:mt-0 lg:-mt-1 xl:-mt-1">
+            <p className="mt-2">
             Than on collage I started to learn pseudo code and Java, what actually I was very new for that languaje but it was so fun to learn.
             </p>
-            <p className="flex ml-2 mt-2 md:mt-0 lg:-mt-1 xl:-mt-1">
+            <p className="mt-2">
             And than learn about cloud systems and data bases was the main frame for to start to develop my own applications.
             </p>
             </>
         ),
         badge:(
             <>
-                <hr className="bg-blue-900 p-0.5"></hr>
+                <hr className="bg-neutral-800 p-0.5"></hr>
             </>
         ) 
         },
@@ -83,7 +83,7 @@ export default function Page() {
                 <div className="">
                     <ImageIcon/>
                 </div>
-                <div className="mr-140 
+                <div className="mr-20 ml-10 
                     md:mr-35 md:-ml-26
                     lg:ml-20 lg:mr-10
                 ">
@@ -116,8 +116,8 @@ export default function Page() {
                     ">Hey! Hi you there, My Name is Gustavo! And I'm Software Engineer.</h1>
                 </div>
                 <div className="
-                    p-4 -mt-20
-                    mr-140           
+                    p-4 -mt-10
+                    mr-10 ml-2           
                                                 /* Default for mobile */
 
                     md:text-xl md:-mr-100 md:-ml-30 md:-mt-20     /* Adjust for md screens (iPad portrait) */
@@ -129,7 +129,7 @@ export default function Page() {
                 ">
                     <p className="
                      text-base
-                     ml-5                     /* Default font size */
+                    ml-5                     /* Default font size */
                     md:text-2xl md:ml-40            /* For md screens (iPad portrait) */
                     lg:text-2xl lg:ml-120            /* For lg screens (iPad landscape, desktops) */
                     xl:text-xl xl:ml-145
@@ -155,17 +155,24 @@ export default function Page() {
                     {pathYears.map((item, index) => (
                         <div key={index}>
                             <h2 className={twMerge(
-                                item.year === "2025" && "text-2xl font-bold -ml-175",
-                                item.year === "2024" && "text-2xl font-bold -ml-175",
-                                item.year === "2023" && "text-2xl font-bold -ml-175",
-                                item.year === "2022" && "text-2xl font-bold -ml-175",
+                                item.year === "2025" && "text-2xl font-bold -ml-177 md:-ml-140 xl:-ml-177",
+                                item.year === "2024" && "text-2xl font-bold -ml-177 md:-ml-140 xl:-ml-177",
+                                item.year === "2023" && "text-2xl font-bold -ml-177 md:-ml-140 xl:-ml-177",
+                                item.year === "2022" && "text-2xl font-bold -ml-177 md:-ml-140 xl:-ml-177",
                             )}>
                                 {item.year}
                             </h2>
-                            <div className="-ml-178 p-0.5">
+                            <div className="-ml-178 p-0.5 mb-2  md:-ml-140 md:-mr-30  lg:-ml-140 lg:-mr-30 xl:-mr-20 xl:-ml-177">
                                 <label className="">{item.badge}</label>
                             </div>
-                            <div className="text-xl -ml-175 mb-4 mt-2">
+                            <div className="text-base
+                                ml-20
+                                -mr-30                     /* Default font size */
+                                md:text-xl md:-ml-140 md:-mt-2 md:mb-10 md:-mr-30            /* For md screens (iPad portrait) */
+                                lg:text-xl lg:mb-10 lg:-ml-140 lg:-mt-2 lg:-mr-40         /* For lg screens (iPad landscape, desktops) */
+                                xl:text-xl xl:mb-10 xl:-ml-177 xl:-mt-2 xl:mr-10
+                                2xl:text-xl 2xl:mb-10 2xl:-ml-177 2xl:-mt-2 2xl:mr-10" 
+                            >
                                 {item.description}                                
                             </div>
                         </div>
