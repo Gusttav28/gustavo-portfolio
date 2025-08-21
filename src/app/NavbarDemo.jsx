@@ -66,7 +66,7 @@ const DummyContent = () => {
       </div>
       <h1 className="-mt-60 ml-7 text-left text-2xl sm:text-2xl md:text-2xl md:-mt-90 md:ml-18 lg:text-3xl font-bold lg:-mt-130 lg:ml-30 xl:text-3xl xl:-mt-120 xl:ml-35">• Projects</h1>
       <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:px-20 lg:mr-40 lg:ml-20 lg:mt-15 xl:mr-60 xl:max-w-3xl"> 
-        <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting, I talk about my professional career and my educational background more in my <a className="hover:text-blue-500" href="">about section.</a> </label>
+        <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting. </label>
       </div>
       <section className="ml-5 lg:mt-20">
         <ProjectSectionDemo/>
