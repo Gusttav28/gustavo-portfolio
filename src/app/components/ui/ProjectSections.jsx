@@ -19,18 +19,39 @@ export function ProjectSectionDemo() {
       description:
         "Task Manager App to record all the things that you might need to do in the future.",
       icon: <IconNotes />,
+      project:(
+        <>
+          <a href="https://github.com/Gusttav28/NextJS">
+            See Project
+          </a>
+        </>
+      ),
     },
     {
       title: "Weather App",
       description:
         "Weather App that to chech the weather of any country that you select and further",
       icon: <IconWind />,
+      project:(
+        <>
+          <a href="https://github.com/Gusttav28/WeatherJS">
+            See Project
+          </a>
+        </>
+      ),
     },
     {
-      title: "Unt Converter",
+      title: "Django Weather API",
       description:
-        "Unit converter calculator to check all the types of units to convert",
+      "Backend of the project of the weather API made it with DRF",
       icon: <IconCalculator />,
+      project:(
+        <>
+          <a href="https://github.com/Gusttav28/Django-Weather-API">
+            See Project
+          </a>
+        </>
+      ),
     },
     {
       title: "Neo",
@@ -53,7 +74,8 @@ const Feature = ({
   title,
   description,
   icon,
-  index
+  index,
+  project,
 }) => {
   return (
     <div
@@ -85,6 +107,10 @@ const Feature = ({
       <p
         className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
+      </p>
+      <p
+        className="text-sm mt-5 hover:text-blue-400 text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+        {project}
       </p>
     </div>
   );
