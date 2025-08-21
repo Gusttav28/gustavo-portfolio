@@ -14,7 +14,7 @@ export default function AboutMe() {
         <div>
             {detail.map((item, index) => (
                 <div key={index}>
-                    <p className="text-xl text-neutral-400 font-light ml-10 mt-30 2xl:text-xl 2xl:mt-5 2xl:mr-80 2xl:ml-10"> 
+                    <p className="text-xl text-center text-neutral-400 font-light ml-10 mt-30 2xl:text-xl 2xl:mt-5 2xl:mr-80 2xl:ml-10"> 
                         {item.description}
                     </p>
                 </div>
