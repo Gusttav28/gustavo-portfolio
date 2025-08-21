@@ -8,6 +8,7 @@ import { InfiniteMovingCardsDemo } from "./components/MovingIcons"
 import { ProjectSectionDemo } from "./components/ui/ProjectSections"
 import UnderPage from "./components/UnderPage"
 import TabYears from "./components/TabYearsExperiences"
+import AboutMe from "./components/AboutMe"
 
 
 
@@ -47,20 +48,24 @@ const DummyContent = () => {
         ">
           <a href="/assets/gcresume.pdf">
             <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold p-4 md:p-6 md:text-base lg:p-6 lg:text-base xl:p-5 xl:text-sm">Download CV</button>
-          </a>
+          </a>      
         </div>
         <div>
-          <h1 className="mt-50 ml-11 text-left text-2xl sm:text-4xl md:text-4xl lg:text-3xl font-bold lg:mt-80">Technologies</h1>
+          <h1 className="mt-40 ml-11 text-left text-2xl sm:text-4xl md:text-4xl lg:text-3xl font-bold lg:mt-80"></h1>
+          <AboutMe/>
+        </div>
+        <div>
+          <h1 className="mt-30 ml-6 text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-bold lg:mt-30">• Technologies</h1>
           <InfiniteMovingCardsDemo/>
         </div>
         
-        <section className="ml-11 mt-40">
+        <section className="ml-6 mt-40">
           <TabYears/>
         </section>
 
       </div>
-      <h1 className="-mt-60 ml-11 text-left text-2xl sm:text-4xl md:text-3xl md:-mt-90 lg:text-3xl font-bold lg:-mt-130 lg:ml-35 xl:text-3xl xl:-mt-100 xl:ml-35">Projects</h1>
-      <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:px-20 lg:mr-40 lg:ml-20 lg:mt-15 xl:mr-60 xl:max-w-3xl">
+      <h1 className="-mt-60 ml-11 text-left text-2xl sm:text-2xl md:text-2xl md:-mt-90 md:ml-16 lg:text-3xl font-bold lg:-mt-130 lg:ml-35 xl:text-3xl xl:-mt-120 xl:ml-35">• Projects</h1>
+      <div className="flex flex-wrap ml-6 pl-4 pr-10 mt-10 lg:pl-20 lg:px-20 lg:mr-40 lg:ml-20 lg:mt-15 xl:mr-60 xl:max-w-3xl"> 
         <label className="text-neutral-400 text-sm lg:text-left lg:text-base">Build projects from scratch are really my passion, and even if of course there's not too much, I'm really working on everything I feel and I found really interesting, but let's be honest, all the software development proojects are interesting, I talk about my professional career and my educational background more in my <a className="hover:text-blue-500" href="">about section.</a> </label>
       </div>
       <section className="ml-5 lg:mt-20">

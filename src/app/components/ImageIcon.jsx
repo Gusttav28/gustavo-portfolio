@@ -15,7 +15,7 @@ export default function ImageIcon() {
                                                     /* Using standard mml-20 mmt-10 for spacing */
 
             xl:size-80 xl:ml-20 xl:mt-20         /* For larger desktops (1280px+) */
-            2xl:size-96 2xl:ml-20 2xl:mt-20      /* For very large screens (1536px+) */
+            2xl:size-3 6 2xl:ml-20 2xl:mt-20      /* For very large screens (1536px+) */
 
             /* If you still want very specific overrides for widths > 1200px (not iPad), keep these but adjust values */
             @min-[1200px]:size-90 @min-[1200px]:ml-35 @min-[1200px]:mt-30

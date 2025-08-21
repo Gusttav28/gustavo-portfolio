@@ -5,6 +5,7 @@ import { NavbarSimple } from "../components/NavBarMUI2"
 import ImageIcon from "../components/ImageIcon"
 import UnderPage from "../components/UnderPage"
 import { twMerge } from "tailwind-merge"
+import { IconDiscountCheckFilled } from "@tabler/icons-react"
 
 export default function Page() {
     const pathYears = [
@@ -12,7 +13,11 @@ export default function Page() {
         year:"2025",
         description:(
             <>
-            <p>
+            <p className="-mb-45 size-70
+                md:w-full  
+                md:-mb-55
+                lg:-mb-60 lg:w-full
+                xl:-mb-57">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto placeat ad dolores rem ipsa veniam voluptatibus dignissimos sunt cumque, voluptate corporis? Odio molestiae expedita ipsam reiciendis amet ex repudiandae.
             </p>
             </>
@@ -32,11 +37,6 @@ export default function Page() {
             </p>
             </>
         ),
-        badge:(
-            <>
-                <hr className="bg-neutral-800 p-0.5"></hr>
-            </>
-        )
         },
         {
         year:"2023",
@@ -45,11 +45,6 @@ export default function Page() {
             <p>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore doloribus quo cum ex illum, beatae suscipit quas excepturi, porro quis odio ipsa eos autem inventore architecto magnam corporis. Aut.s 
             </p>
-            </>
-        ),
-        badge:(
-            <>
-                <hr className="bg-neutral-800 p-0.5"></hr>
             </>
         )
         },
@@ -67,12 +62,7 @@ export default function Page() {
             And than learn about cloud systems and data bases was the main frame for to start to develop my own applications.
             </p>
             </>
-        ),
-        badge:(
-            <>
-                <hr className="bg-neutral-800 p-0.5"></hr>
-            </>
-        ) 
+        )
         },
     ]
 
@@ -168,10 +158,10 @@ export default function Page() {
                             <div className="text-base
                                 ml-20
                                 -mr-30                     /* Default font size */
-                                md:text-xl md:-ml-140 md:-mt-2 md:mb-10 md:-mr-30            /* For md screens (iPad portrait) */
-                                lg:text-xl lg:mb-10 lg:-ml-140 lg:-mt-2 lg:-mr-40         /* For lg screens (iPad landscape, desktops) */
-                                xl:text-xl xl:mb-10 xl:-ml-177 xl:-mt-2 xl:mr-10
-                                2xl:text-xl 2xl:mb-10 2xl:-ml-177 2xl:-mt-2 2xl:mr-10" 
+                                md:text-base md:-ml-140 md:-mt-2 md:mb-10 md:-mr-30            /* For md screens (iPad portrait) */
+                                lg:text-base lg:mb-10 lg:-ml-140 lg:-mt-2 lg:-mr-40         /* For lg screens (iPad landscape, desktops) */
+                                xl:text-base xl:mb-10 xl:-ml-177 xl:-mt-2 xl:mr-10
+                                2xl:text-base 2xl:mb-10 2xl:-ml-177 2xl:-mt-2 2xl:mr-10" 
                             >
                                 {item.description}                                
                             </div>

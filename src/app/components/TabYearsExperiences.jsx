@@ -75,8 +75,8 @@ export default function TabYears() {
         <> 
             <div className="mb-50 w-full -px-25 -mt-15 lg:mb-100 lg:mt-50">
             <div className="flex items-center gap-2 mb-20 -ml-6 lg:mb-20 lg:-ml-11">
-                <h1 className="text-left text-2xl ml-4 sm:text-4xl md:text-4xl lg:text-2xl font-bold lg:ml-12">Work</h1>
-                 <h1 className="text-left text-2xl sm:text-4xl md:text-4xl lg:text-2xl font-bold">Experience</h1>
+                <h1 className="text-left text-2xl ml-4 sm:text-2xl md:text-2xl lg:text-3xl font-bold lg:ml-12">• Work</h1>
+                 <h1 className="text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">Experience</h1>
             </div>
                 <div className="w-full max-w-5xl mx-auto pt-4 lg:px-20 lg:-ml-10 xl:-ml-20 xl:px-30">
                     {additionalExperience.map((item, index) => (
