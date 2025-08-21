@@ -83,7 +83,7 @@ export function NavbarSimple() {
   }, []);
  
   return (
-    <Navbar className="bg-black mx-auto border-black py-3 sm:ml-50 mb:ml-250 lg:ml-100 xl:ml-150 2xl:ml-150">
+    <Navbar className="bg-black mx-auto border-black py-3 ml-5 sm:ml-50 mb:ml-250 lg:ml-100 xl:ml-160 2xl:ml-160">
       <div className="flex items-center mx-auto w-full justify-between max-w-screen-xl gap-2 text-blue-gray-900">
         <Typography
           as="a"
@@ -117,12 +117,12 @@ export function NavbarSimple() {
         </IconButton> */}
       </div>
       <div className="flex mt-2 ml-15">
-        <a className="hover:text-blue-400 -mt-3 ml-20 sm:-mt-3 sm:ml-28 mb:-mt-3 mb:ml-20 lg:-mt-3 lg:ml-28 xl:-mt-3 xlml-32 2xl:-mt-3 2xl:ml-32
+        <a className="hover:text-blue-400 -mt-3 ml-17 sm:-mt-3 sm:ml-28 mb:-mt-3 mb:ml-20 lg:-mt-3 lg:ml-28 xl:-mt-3 xl:ml-20 2xl:-mt-3 2xl:ml-20
           " href="https://www.linkedin.com/in/gustavo-camacho-b9a64b243/">
               <IconBrandLinkedin/>
           </a>
         <a className="hover:text-blue-400 -mt-3 ml-2                      
-          " href="https://www.linkedin.com/in/gustavo-camacho-b9a64b243/">
+          " href="https://github.com/Gusttav28">
               <IconBrandGithub/>
           </a>
       </div>
