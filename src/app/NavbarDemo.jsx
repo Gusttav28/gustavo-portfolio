@@ -40,14 +40,17 @@ const DummyContent = () => {
             Hello! My Name is Gustavo! And I'm Software Engineer student who is exited to build and to contribute growing the next generation of software development and technology industries.
           </p>
         </div>
-        <div className="mt-20 ml-30 -mb-20 
+        <div className="mt-20 ml-30 -mb-20
         md:ml-65
         lg:-mb-10 lg:-mt-60 lg:ml-200
         xl:-mt-50 xl:ml-280 xl:-mb-10
         2xl:-mt-50 2xl:ml-300
         ">
+          <a href="/contact">
+            <button className="bg-neutral-200 text-black hover:scale-105 transition-transform rounded-4xl text-base font-bold -ml-10 p-4 md:p-6 md:text-base lg:p-6 lg:ml-8 lg:mt-5 lg:text-base xl:p-5 xl:text-base">Contact</button>
+          </a>      
           <a href="/assets/gcresume.pdf">
-            <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold p-4 md:p-6 md:text-base lg:p-6 lg:text-base xl:p-5 xl:text-sm">Download CV</button>
+            <button className="bg-neutral-500 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold ml-4 p-4 md:p-6 md:text-base lg:p-6 lg:mt-5 lg:text-base xl:p-5 xl:text-base">Download CV</button>
           </a>      
         </div>
         <div>
