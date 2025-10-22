@@ -24,7 +24,7 @@ export default function Page() {
             <button className="bg-blue-400 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold ml-4 p-4 md:p-6 md:text-base lg:p-6 lg:mt-5 lg:text-base xl:p-5 xl:text-base xl:ml-190 xl:mt-80">Design Pattern</button>
             </a> 
             <a href="/assets/examWalterr.pdf">
-            <button className="bg-blue-400 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold ml-4 p-4 md:p-6 md:text-base lg:p-6 lg:mt-5 lg:text-base xl:p-5 xl:text-base xl:ml-200 xl:mt-80">Walter Exam</button>
+            <button className="bg-blue-400 text-white hover:scale-105 transition-transform rounded-4xl text-base font-bold ml-4 p-4">Walter Exam</button>
             </a>
             {/* <UnderPage/> */}
         </div>
