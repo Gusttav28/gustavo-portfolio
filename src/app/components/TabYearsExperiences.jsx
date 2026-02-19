@@ -40,9 +40,9 @@ const additionalExperience = [
     //     badge:"Call center Agent"
     // },
     {
-        title:"Freelance Job | San Jose - Costa Rica",
-        description:(
-            <> 
+        title: "Freelance Job | San Jose - Costa Rica",
+        description: (
+            <>
                 <p className="-mb-45 size-70
                     md:w-full  
                     md:-mb-55
@@ -52,8 +52,8 @@ const additionalExperience = [
                 </p>
             </>
         ),
-        year:"2024",
-        badge:"Python Developers"
+        year: "2024",
+        badge: "Python Developers"
     },
     // {
     //     title:"Delirio House | San Jose - Costa Rica",
@@ -72,19 +72,19 @@ const additionalExperience = [
 
 export default function TabYears() {
     return (
-        <> 
+        <>
             <div className="mb-50 w-full -px-25 -mt-15 lg:mb-100 lg:mt-50">
-            <div className="flex items-center gap-2 mb-20 -ml-6 lg:mb-20 lg:-ml-11">
-                <h1 className="text-left text-2xl ml-6 sm:text-2xl md:text-2xl lg:text-3xl font-bold lg:ml-12">• Work</h1>
-                 <h1 className="text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">Experience</h1>
-            </div>
+                <div className="flex items-center gap-2 mb-20 -ml-6 lg:mb-20 lg:-ml-11">
+                    <h1 className="text-left text-2xl ml-6 sm:text-2xl md:text-2xl lg:text-3xl font-bold lg:ml-12">• Work</h1>
+                    <h1 className="text-left text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">Experience</h1>
+                </div>
                 <div className="w-full max-w-5xl mx-auto pt-4 lg:px-20 lg:-ml-10 xl:-ml-20 xl:px-30">
                     {additionalExperience.map((item, index) => (
                         <div key={index} className="mb-14 ml-6 w-full">
                             <h2 className={twMerge(
                                 "bg-gray-900 text-white rounded-full text-sm w-fit px-3 py-2 mb-3 font-normal lg:ml-0",
                                 item.year === "2024" && "-mt-18 md:-mt-12 xl:-mt-13 lg:py-2",
-                                 // más arriba solo este // más arriba solo este
+                                // más arriba solo este // más arriba solo este
                             )}>
                                 {item.year}
                             </h2>
